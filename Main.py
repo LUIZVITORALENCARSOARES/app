@@ -1,14 +1,15 @@
 class Main:
-    nome = "Ana"
-    print(len(nome))
-
-print('Testando o projeto')
+    pass
 
 from Cliente import Cliente
 
 from Conta import Conta
 
 c1 = Cliente('João', '114444-2222')
-conta = Conta(c1., 6565, 0)
+conta = Conta(c1.get_nome(), 1222)
+
+conta.deposita(100)
+conta.saque(50)
+conta.extrato()
 
 print(conta.titular, ' Número: ', conta.numero, 'Seu Saldo: ', conta.saldo)
